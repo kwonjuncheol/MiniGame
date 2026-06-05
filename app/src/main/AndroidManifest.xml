@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiniGameApp">
         <activity
+            android:name=".BlackJackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WordGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimingGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpDownActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

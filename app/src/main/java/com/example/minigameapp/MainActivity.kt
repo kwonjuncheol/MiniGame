@@ -1,6 +1,8 @@
 package com.example.minigameapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,32 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val btnUpDown = findViewById<Button>(R.id.btn_up_down)
+        val btnTiming = findViewById<Button>(R.id.btn_timing)
+        val btnWord = findViewById<Button>(R.id.btn_word)
+        val btnBlackjack = findViewById<Button>(R.id.btn_blackjack)
+
+        btnUpDown.setOnClickListener {
+            val intent = Intent(this, UpDownActivity::class.java)
+            startActivity(intent)
         }
+
+        btnTiming.setOnClickListener {
+            val intent = Intent(this, TimingGameActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnWord.setOnClickListener {
+            val intent = Intent(this, WordGameActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnBlackjack.setOnClickListener {
+            val intent = Intent(this, BlackJackActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }

@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">MiniGameApp</string>
+    <string name="app_name">미니게임천국</string>
+    <string name="btn_up_down_text">업 앤 다운</string>
+    <string name="btn_timing_text">5초 타이밍</string>
+    <string name="btn_word_text">단어 맞추기</string>
+    <string name="btn_blackjack_text">블랙잭</string>
+    <string name="title_up_down">업 앤 다운</string>
+    <string name="title_timing">5초 타이밍 게임</string>
+    <string name="title_word">단어 맞추기 게임</string>
+    <string name="title_blackjack">블랙잭 게임</string>
 </resources>
