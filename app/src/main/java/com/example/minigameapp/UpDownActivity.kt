@@ -20,12 +20,17 @@ class UpDownActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_up_down)
 
+        val btnBack = findViewById<Button>(R.id.btn_back)
         val tvResult = findViewById<TextView>(R.id.tv_result)
         val etInput = findViewById<EditText>(R.id.et_input)
         val btnSubmit = findViewById<Button>(R.id.btn_submit)
         val tvHistory = findViewById<TextView>(R.id.tv_history)
 
         targetNumber = Random.nextInt(1, 101)
+
+        btnBack.setOnClickListener {
+            finish() // 이 화면을 종료하고 이전(메인) 화면으로 돌아감
+        }
 
         btnSubmit.setOnClickListener {
             val inputStr = etInput.text.toString()

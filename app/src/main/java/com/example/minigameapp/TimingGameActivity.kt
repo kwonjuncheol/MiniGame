@@ -40,9 +40,14 @@ class TimingGameActivity : AppCompatActivity() {
         setContentView(R.layout.activity_timing_game)
 
         tvTimer = findViewById(R.id.tv_timer)
+
+        val btnBack = findViewById<Button>(R.id.btn_back)
         val btnAction = findViewById<Button>(R.id.btn_action)
         val tvResult = findViewById<TextView>(R.id.tv_result)
 
+        btnBack.setOnClickListener {
+            finish() // 이 화면을 종료하고 이전(메인) 화면으로 돌아감
+        }
         btnAction.setOnClickListener {
             if (!isRunning) {
                 // [시작] 상태일 때 누른 경우

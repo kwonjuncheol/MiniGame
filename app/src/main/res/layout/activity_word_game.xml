@@ -1,16 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".WordGameActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="32dp">
 
-    <TextView
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← 뒤로"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/title_word"
-        />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5글자 영단어를 맞춰보세요!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🟩 위치/알파벳 일치\n🟨 알파벳만 일치\n⬜ 불일치"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/et_word_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="APPLE"
+            android:inputType="textCapCharacters"
+            android:maxLength="5"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_guess"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="입력"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_word_history"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="24dp"
+            android:textAlignment="center"
+            android:lineSpacingExtra="8dp"
+            android:textSize="20sp"
+            android:letterSpacing="0.2" />
+    </LinearLayout>
+</LinearLayout>
