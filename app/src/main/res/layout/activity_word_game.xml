@@ -32,7 +32,7 @@ android:padding="32dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🟩 위치/알파벳 일치\n🟨 알파벳만 일치\n⬜ 불일치"
+            android:text="🟩 위치+알파벳 일치\n🟨    알파벳만 일치   \n⬜  맞는 알파벳 없음"
             android:textAlignment="center"
             android:textSize="16sp"
             android:layout_marginBottom="24dp" />
@@ -41,7 +41,7 @@ android:padding="32dp">
             android:id="@+id/et_word_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="APPLE"
+            android:hint="알파벳5개"
             android:inputType="textCapCharacters"
             android:maxLength="5"
             android:textAlignment="center"
@@ -53,7 +53,7 @@ android:padding="32dp">
             android:id="@+id/btn_guess"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="입력"
+            android:text="맞춰보기"
             android:textSize="20sp" />
 
         <TextView

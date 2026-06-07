@@ -1,65 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
 
-    <Button
-        android:id="@+id/btn_up_down"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="@string/btn_up_down_text"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_word"
-        app:layout_constraintEnd_toStartOf="@+id/btn_timing"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread_inside"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미니게임천국"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:layout_marginBottom="48dp" />
 
-    <Button
-        android:id="@+id/btn_timing"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="@string/btn_timing_text"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_blackjack"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_up_down"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
 
-    <Button
-        android:id="@+id/btn_word"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="@string/btn_word_text"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_blackjack"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_up_down"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp" />
+        <Button
+            android:id="@+id/btn_up_down"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="업 앤 다운"
+            android:textSize="20sp"
+            android:layout_marginEnd="8dp" />
 
-    <Button
-        android:id="@+id/btn_blackjack"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="@string/btn_blackjack_text"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_word"
-        app:layout_constraintTop_toBottomOf="@+id/btn_timing"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp" />
+        <Button
+            android:id="@+id/btn_timing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5초 맞추기"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_word"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="WORDLE"
+            android:textSize="20sp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_blackjack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="블랙 잭"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -48,15 +48,15 @@ class UpDownActivity : AppCompatActivity() {
 
             when {
                 inputNum > targetNumber -> {
-                    historyResult = "Down 👇"
-                    tvResult.text = "입력한 숫자: $inputNum\n👇 Down! (시도: ${tryCount}번)"
+                    historyResult = "Down"
+                    tvResult.text = "입력한 숫자: $inputNum\n Down! (시도: ${tryCount}번)"
                 }
                 inputNum < targetNumber -> {
-                    historyResult = "Up 👆"
-                    tvResult.text = "입력한 숫자: $inputNum\n👆 Up! (시도: ${tryCount}번)"
+                    historyResult = "Up"
+                    tvResult.text = "입력한 숫자: $inputNum\n Up! (시도: ${tryCount}번)"
                 }
                 else -> {
-                    historyResult = "정답 🎉"
+                    historyResult = "정답"
                     tvResult.text = "정답입니다! ($inputNum)\n${tryCount}번 만에 맞췄습니다!"
                     btnSubmit.isEnabled = false
                 }

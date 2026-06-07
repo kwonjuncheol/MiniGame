@@ -52,7 +52,7 @@
             android:id="@+id/tv_bj_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="카드를 뽑아주세요!"
+            android:text="카드를 뽑거나 스톱을 눌러주세요"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="32dp" />
@@ -68,7 +68,7 @@
                 android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
-                android:text="카드 받기"
+                android:text="카드 뽑기"
                 android:textSize="18sp" />
 
             <Button
@@ -77,7 +77,7 @@
                 android:layout_height="70dp"
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
-                android:text="멈춤"
+                android:text="스톱"
                 android:textSize="18sp" />
         </LinearLayout>
 
