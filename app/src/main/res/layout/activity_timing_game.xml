@@ -24,26 +24,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="정확히 5.00초에 멈추세요!"
-            android:textSize="24sp"
+            android:textSize="30sp"
             android:textStyle="bold"
-            android:layout_marginBottom="48dp" />
+            android:layout_marginBottom="50dp" />
 
         <TextView
             android:id="@+id/tv_timer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0.00"
-            android:textSize="80sp"
+            android:textSize="100sp"
             android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:layout_marginBottom="48dp" />
+            android:textColor="#0000FF"
+            android:layout_marginBottom="50dp" />
 
         <Button
-            android:id="@+id/btn_action"
+            android:id="@+id/btn_start"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:text="시작"
-            android:textSize="32sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:layout_marginBottom="24dp" />
 
@@ -56,5 +56,4 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
 </LinearLayout>

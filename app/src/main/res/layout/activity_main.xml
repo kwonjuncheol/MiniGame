@@ -63,5 +63,4 @@
             android:textSize="20sp"
             android:layout_marginStart="8dp" />
     </LinearLayout>
-
 </LinearLayout>

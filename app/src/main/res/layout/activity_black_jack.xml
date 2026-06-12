@@ -24,32 +24,33 @@
             android:id="@+id/tv_dealer_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="딜러 점수: ???"
-            android:textSize="24sp"
+            android:text="딜러 점수: 스톱하면 공개됨"
+            android:textSize="30sp"
             android:textStyle="bold"
-            android:textColor="#F44336"
-            android:layout_marginBottom="48dp" />
+            android:textColor="#FF0000"
+            android:layout_marginBottom="30dp" />
 
         <TextView
             android:id="@+id/tv_my_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="내 점수: 0"
-            android:textSize="32sp"
+            android:textSize="30sp"
             android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:layout_marginBottom="8dp" />
+            android:textColor="#0000FF" />
 
         <TextView
             android:id="@+id/tv_my_cards"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="뽑은 카드: "
-            android:textSize="18sp"
-            android:layout_marginBottom="48dp" />
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"/>
 
         <TextView
-            android:id="@+id/tv_bj_result"
+            android:id="@+id/tv_blackjack_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="카드를 뽑거나 스톱을 눌러주세요"
@@ -63,33 +64,32 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_hit"
+                android:id="@+id/btn_draw"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="10dp"
                 android:text="카드 뽑기"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/btn_stand"
+                android:id="@+id/btn_stop"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="10dp"
                 android:text="스톱"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
         </LinearLayout>
 
         <Button
             android:id="@+id/btn_restart"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:text="다시 하기"
             android:textSize="20sp"
-            android:layout_marginTop="24dp"
-            android:visibility="gone" />
+            android:layout_marginTop="30dp"
+            android:visibility="invisible" />
 
     </LinearLayout>
-
 </LinearLayout>

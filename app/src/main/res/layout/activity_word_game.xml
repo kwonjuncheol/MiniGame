@@ -21,21 +21,22 @@ android:padding="32dp">
         android:orientation="vertical">
 
         <TextView
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5글자 영단어를 맞춰보세요!"
-            android:textSize="24sp"
+            android:textSize="25sp"
             android:textStyle="bold"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="20dp" />
 
+        <!--이모지를 사용하여 칸마다 정답체크함 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🟩 위치+알파벳 일치\n🟨    알파벳만 일치   \n⬜  맞는 알파벳 없음"
+            android:text="✅ 위치+알파벳 일치\n🟨    알파벳만 일치   \n⬛  맞는 알파벳 없음"
             android:textAlignment="center"
             android:textSize="16sp"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="20dp" />
 
         <EditText
             android:id="@+id/et_word_input"
@@ -43,18 +44,18 @@ android:padding="32dp">
             android:layout_height="wrap_content"
             android:hint="알파벳5개"
             android:inputType="textCapCharacters"
-            android:maxLength="5"
             android:textAlignment="center"
-            android:textSize="24sp"
+            android:textSize="30sp"
+            android:maxLength="5"
             android:letterSpacing="0.2"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="10dp" />
 
         <Button
-            android:id="@+id/btn_guess"
+            android:id="@+id/btn_submit"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="맞춰보기"
-            android:textSize="20sp" />
+            android:text="맞 춰 보 기"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/tv_word_history"
@@ -63,8 +64,7 @@ android:padding="32dp">
             android:layout_weight="1"
             android:layout_marginTop="24dp"
             android:textAlignment="center"
-            android:lineSpacingExtra="8dp"
-            android:textSize="20sp"
-            android:letterSpacing="0.2" />
+            android:textSize="15sp" />
+
     </LinearLayout>
 </LinearLayout>
