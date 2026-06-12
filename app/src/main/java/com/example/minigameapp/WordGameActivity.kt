@@ -53,7 +53,7 @@ class WordGameActivity : AppCompatActivity() {
                 val inputChar = inputWord[i]
                 val targetChar = targetWord[i]
 
-                    if (inputChar == targetChar) {
+                if (inputChar == targetChar) {
                     answerSquare += "✅"  // 위치와 알파벳이 정답.
                 } else if (targetWord.contains(inputChar)) {
                     answerSquare += "🟨"  // 위치는 다른데 글자가 있긴 함.
